@@ -5,5 +5,5 @@ const promesa = new Promise ((resolve, reject) => {
 });
 
 promesa.catch(error => {
-   console.error("Error");
+   console.error(error);
 });

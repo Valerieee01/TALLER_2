@@ -1,17 +1,3 @@
-[
-    {
-        "nombre": "Valerie",
-        "apellido": "Afanador",
-        "ciudad": "Bucaramanga"
-    },
-    {
-        "nombre": "Camila",
-        "apellido": "Navas",
-        "ciudad": "Girón"
-    },
-    {
-        "nombre": "Juan",
-        "apellido": "Beltran",
-        "ciudad": "Girón"
-    }
-]
+{
+    ""
+}
