@@ -1,14 +1,20 @@
+const promesa_1 = new Promise ((resolve, reject) => {
+    setTimeout(() => {
+        resolve(1);
+    },1000);
+})
 
-const verificarPositivos = async (num) => {
-    return await num >= 0;
-}
+const promesa_2 = new Promise ((resolve, reject) => {
+    setTimeout(() => {
+        resolve(2);
+    },2000);
+});
+const promesa_3 = new Promise ((resolve, reject) => {
+    setTimeout(() => {
+        resolve(3);
+    },3000);
+})
 
-const recorreArray = async (...array) => {
-    for (let i = 0; i < array.length; i++) {
-        let rta = await verificarPositivos(array[i]); 
-        console.log(rta);
-    }
-}
-
-let array = [1, -2, 6, 5];
-recorreArray(...array); 
+Promise.all([promesa_1,promesa_2,promesa_3]).then(menssage => {
+    console.log(menssage); 
+})
